@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sam Stokes</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+
+    <form id="survey-form">
+        <div id="form_holder">
+            <p id="description">Let us know how you feel about honeydew (yes, the fruit)</p>
+            <div>
+                <label for="name" id="name-label">*Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name here">
+            </div>
+            <div>
+                <label for="email" id="email-label">*Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email here">
+            </div>
+            <div>
+                <label for="age" id="number-label">*Age</label>
+                <input type="number" id="number" name="age" min="1" max="110" required placeholder="Age">
+            </div>
+            <div>
+                <label for "dropdown">Which option best describes your current feelings about honeydew?</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="hate honeydew">I hate honeydew</option>
+                    <option value="Gross">Gross</option>
+                    <option value="Disgusting">Disgusting</option>
+                    <option value="Not food">Not food</option>
+                    <option value="uninvited">Cantaloupe's digusting friend who always shows up uninvited</option>
+                </select>
+            </div>
+            <div>
+                <label for "radio">How likely are you to recommend honeydew to a freind?</label>
+                <ul id="preferences" style="list-style: none;">
+                    <li class="radio"><input type="radio" name="radio" value="hate"> Do I hate the friend?</li>
+                    <li class="radio"><input type="radio" name="radio" value="unlikely"> Unlikely</li>
+                    <li class="radio"><input type="radio" name="radio" value="why"> Why would I do that?</li>
+                </ul>
+            </div>
+            <div>
+                <label for "checklist">Ways to improve honeydew. (Check all that apply)</label>
+                <ul style="list-style:none;">
+                    <li class="checklist"><input type="checkbox" id="checklist" name="check1" value="cant"> It can't be
+                        done</li>
+                    <li class="checklist"><input type="checkbox" id="checklist" name="check2" value="burn"> Burn it all</li>
+                    <li class="checklist"><input type="checkbox" id="checklist" name="check3" value="cantaloupe"> Turn
+                        it into cantaloupe</li>
+                    <li class="checklist"><input type="checkbox" id="checklist" name="check3" value="extinct"> Wipe it
+                        from existense</li>
+                </ul>
+            </div>
+            <div>
+                <label for="comments">Any Comments or Suggestions?</label>
+                <textarea id="comments" name="comment" rows="6" cols="50" placeholder="Enter additional comments here..."></textarea>
+            </div>
+
+            <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
+
+</html>
