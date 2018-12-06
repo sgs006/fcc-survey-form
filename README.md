@@ -1,5 +1,5 @@
 # Free Code Camp Survey Form 
-Project meant to practice making forms using HTMl/CSS
+Project meant to practice making forms using HTML/CSS
 
 ## Functionality
 Basic form functionality. No backend. 
